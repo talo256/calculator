@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#11151c" />
+  <meta name="description" content="A clean, responsive calculator built with vanilla HTML, CSS and JavaScript." />
+  <title>Calculator — Precision, Simplified</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="brand">
+      <div class="brand-mark" aria-hidden="true">∑</div>
+      <div>
+        <p class="eyebrow">EVERYDAY TOOLS</p>
+        <h1>Calculator</h1>
+      </div>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <div class="display-meta">
+          <span class="display-label">RESULT</span>
+          <span class="memory-indicator" id="memoryIndicator" aria-label="Memory status"></span>
+        </div>
+        <div class="expression" id="expression">Ready when you are</div>
+        <output class="result" id="result" aria-label="Current value">0</output>
+      </div>
+
+      <div class="keypad" id="keypad">
+        <button class="key key-utility" data-action="clear" type="button">AC</button>
+        <button class="key key-utility" data-action="sign" type="button" aria-label="Toggle sign">±</button>
+        <button class="key key-utility" data-action="percent" type="button">%</button>
+        <button class="key key-operator" data-operator="÷" type="button" aria-label="Divide">÷</button>
+
+        <button class="key" data-digit="7" type="button">7</button>
+        <button class="key" data-digit="8" type="button">8</button>
+        <button class="key" data-digit="9" type="button">9</button>
+        <button class="key key-operator" data-operator="×" type="button" aria-label="Multiply">×</button>
+
+        <button class="key" data-digit="4" type="button">4</button>
+        <button class="key" data-digit="5" type="button">5</button>
+        <button class="key" data-digit="6" type="button">6</button>
+        <button class="key key-operator" data-operator="−" type="button" aria-label="Subtract">−</button>
+
+        <button class="key" data-digit="1" type="button">1</button>
+        <button class="key" data-digit="2" type="button">2</button>
+        <button class="key" data-digit="3" type="button">3</button>
+        <button class="key key-operator" data-operator="+" type="button" aria-label="Add">+</button>
+
+        <button class="key key-zero" data-digit="0" type="button">0</button>
+        <button class="key" data-action="decimal" type="button">.</button>
+        <button class="key key-operator key-equals" data-action="equals" type="button" aria-label="Equals">=</button>
+      </div>
+
+      <footer class="calculator-footer">
+        <span><span class="status-dot"></span> Ready for your next calculation</span>
+        <button class="memory-button" data-action="memory-clear" type="button" title="Clear memory">MC</button>
+      </footer>
+    </section>
+
+    <p class="page-note">Thoughtfully simple. Built for everyday precision.</p>
+  </main>
+</body>
+</html>
